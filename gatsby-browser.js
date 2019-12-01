@@ -1,5 +1,5 @@
 import '@styles/base.scss'
-
+require("prismjs/themes/prism.css")
 /**
  * Implement Gatsby's Browser APIs in this file.
  *

@@ -2,7 +2,6 @@
   "name": "lfalck-portfolio",
   "version": "0.1.0",
   "private": true,
-  "description": "Dinesh Pandiyan | Web Dev",
   "keywords": [
     "developer",
     "javascript",
@@ -10,7 +9,6 @@
     "react"
   ],
   "license": "MIT",
-  "author": "Dinesh Pandiyan <flexdinesh@gmail.com>",
   "scripts": {
     "build": "gatsby build",
     "clean": "rm -rf public .cache",
