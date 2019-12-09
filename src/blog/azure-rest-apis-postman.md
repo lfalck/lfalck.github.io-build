@@ -36,24 +36,11 @@ function createServiceBusOrEventHubsSASToken(resourceUri, sasKeyName, sasKey) {
 ```
 This function is used in a collection level pre-request script which means it will run before every request in the collection. The parameters to the script are taken from collection variables and the resulting token is stored in another collection variable and used in in all requests.
 
-Since the SAS key gives full access to a particular Service Bus or Event Hubs namespace, you might want to take some of these precautions:  
-
-* Only use this in your development and test environments
-* Use a separate shared access policy for Postman with only the listen and send permissions
-* Disable Postman Sync unless you want to sync the SAS key to your Postman account
-
 ## Azure Storage
 Creating a collection for Azure storage was more straightforward since you have the ability to generate an account level SAS query string directly in the portal by going to a storage account in the Azure Portal and clicking **Shared access signature**. 
 
-Some recommendations: 
-
-* Only add the permissions you actually need
-* Only allow https
-* Add your client ip
-* Set an expiration date
-
 ## Azure Event Grid
-The only relevant action available for Azure Event Grid is to send events to custom Topics. Authentication is provided by a SAS key in a custom header called **aeg-sas-key**. There are currently not many options to increase security except the option to regenerate keys. 
+The only relevant action available for Azure Event Grid is to send events to custom Topics. Authentication is provided by a SAS key in a custom header called **aeg-sas-key**.
 
 The body format looks like this:
 
