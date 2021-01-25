@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '@components/Layout'
 import SEO from '@components/seo'
 import NameBoard from '@components/NameBoard'
-// import IBuildSection from '@components/IBuildSection'
+import IBuildSection from '@components/IBuildSection'
 import IBlogSection from '@components/IBlogSection'
 // import ITalkSection from '@components/ITalkSection'
 // import TweetThreadsSection from '@components/TweetThreadsSection'
@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
       keywords={[`developer`, `azure`, `integration`, `.net`]}
     />
     <NameBoard />
-    {/* <IBuildSection /> */}
+    <IBuildSection />
     <IBlogSection />
     {/* <ITalkSection /> */}
     {/* <TweetThreadsSection /> */}

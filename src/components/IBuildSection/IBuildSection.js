@@ -7,10 +7,8 @@ import styles from './IBuildSection.module.scss'
 
 const IBuildSection = ({ portfolioItems }) => (
   <div className={styles.container}>
-    <h1 className={styles.title}>I Build Things</h1>
-    <p className={styles.intro}>
-      Intro <HighlightBGYellow>(highlight)</HighlightBGYellow>.
-    </p>
+    <h1 className={styles.title}>Projects</h1>
+
     <div className={styles.showcaseContainer}>
       {portfolioItems.map(pi => (
         <ShowcaseItem {...pi} key={pi.title} />
